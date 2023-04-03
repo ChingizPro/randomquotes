@@ -16,7 +16,7 @@ body, button, input, textarea {
 }
 .page {
     min-height: 100vh;
-    padding: 100px;
+    padding: 90px;
     background-color: pink;
 }
 .quote {
@@ -51,4 +51,70 @@ body, button, input, textarea {
     padding: 15px 45px;
     border-radius: 5px;
     cursor: pointer;
+}
+@media(max-width:1100px){
+    .page {
+        padding: 60px 70px;
+    }
+    .box {
+        margin-bottom: 50px;
+    }
+    .quote {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+    .change {
+        font-size: 24px;
+        padding: 12px 35px;
+    }
+    .author {
+        font-size: 27px;
+    }
+    .quote::before, .quote::after {
+        font-size: 30px;
+    }
+}
+@media(max-width:750px){
+    .page {
+        padding: 30px;
+    }
+    .box {
+        margin-bottom: 25px;
+    }
+    .change {
+        font-size: 21px;
+        padding: 9px 25px;
+    }
+    .quote {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .author {
+        font-size: 22px;
+    }
+    .quote::before, .quote::after {
+        font-size: 27px;
+    }
+}
+@media(max-width:500px){
+    .page {
+        text-align: center;
+        padding: 24px 15px;
+    }
+    .author {
+        text-align: center;
+    }
+    .box {
+        margin-bottom: 20px;
+    }
+    .change {
+        font-size: 18px;
+        padding: 7px 20px;
+    }
+    .quote {
+        font-size: 21px;
+    }
+    .author {
+        font-size: 20px;
+    }
 }
